@@ -1,0 +1,210 @@
+
+.container{
+    display: flex;
+}
+.nav-bar{
+    padding: 0%;
+    width: fit-content;
+    margin-left: 3%;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+   
+}
+.nav-bar li{
+    list-style-type:none;
+    padding: 1rem 1rem;
+}
+.nav-bar li a{
+    text-decoration: none;
+    color: grey;
+}
+ul{
+    padding: 4%;
+}
+.box{
+    width: 80%;
+    display: flex;
+    margin: 0 4%;
+    height: 100vh;
+    left: 200px;
+    transition: left 0.5s ease;
+}
+
+
+#maintext{
+    font-size: 75px;
+    font-family: 'Abril Fatface', cursive;
+    margin-top: 7%;
+    width: 65%;
+    height: auto;
+}
+
+p{
+    width: 20%;
+    color: grey;
+    height: fit-content;
+    margin: 11% 5%;
+}
+p::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    margin: 4px 1px;
+    background: #d45e26;
+    display: block;
+    border-radius: 10%;
+}
+
+.foodbox{
+    display: flex;
+    position: absolute;
+    margin-top: 28%;
+    height:60%;
+}
+ 
+.taco img{
+    height: 35%;
+    width: 60%;
+    border-radius: 60%;
+    margin-left: 18%;
+    margin-top: 25%;
+}
+
+.taco{
+    box-shadow: 2px 2px 10px rgb(162, 157, 157);
+    margin: 2px 20px;
+    border-radius: 5%;
+}
+.btn{
+    background: #f78012;
+    border-radius: 20px;
+    border: none;
+    width: 58%;
+    height: 5%;
+    cursor: pointer;
+}
+
+
+
+    @media only screen and (max-width:1253px){
+        .nav-bar{
+            padding: 0%;
+            width: fit-content;
+            margin-left: 0%;
+        }
+        .nav-bar li{
+            list-style-type:none;
+           
+        }
+        .nav-bar li a{
+            text-decoration: none;
+            color: grey;
+            font-size: 10px;
+        }
+        .btn{
+            
+            display: none;
+        }
+        .box{
+            width: 90%;
+            display: flex;
+            
+            margin: 0 0;
+            height: 100vh;
+        }
+        
+        #maintext{
+            font-size: 1.5rem;
+            font-family: 'Abril Fatface', cursive;
+            margin-top: 7%;
+            width: 75%;
+            height: 50%;
+        }
+        
+        p{
+            width: 100%;
+            color: rgb(48, 90, 204);
+            height: fit-content;
+            font-size: 10px;
+            top: 5rem;
+            
+        }
+        
+       #navhead{
+           font-size: 1rem;
+           margin-top: 3rem;
+           margin-left: 1rem;
+       }
+        .foodbox{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: absolute;
+            margin-top: 40%;
+            margin-left: -30px;
+            height:60%;
+            justify-content: space-between;
+        }
+         
+        .taco img{
+            height: 35%;
+            width: 60%;
+            border-radius: 60%;
+            margin-left: 18%;
+            margin-top: 25%;
+        }
+        .label{
+            font-size: 9px;
+            margin: 0px 15px;
+        }
+        .taco{
+            box-shadow: 2px 2px 10px rgb(162, 157, 157);
+            
+        }
+
+       
+        label {
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            left: 155px;
+                        
+            
+        }
+        #sidebarMenu{
+            transform: translateX(-150px);
+            transition: transform 0.5s ease-in-out;
+        }
+        .sidebarIconToggle{
+            width: 40px;
+            height: 20px;
+            position: absolute;
+            top: 32px;
+            left: 15px;
+            cursor: pointer;
+            display: block;
+        }
+        #openSidebarMenu:checked ~ #sidebarMenu{
+            transform: translateX(-12px);
+            
+            
+           }
+        .spinner{
+             height: 3px;
+               background-color: rgb(231, 125, 43);
+               transition: all 0.4s;
+           }
+    .spinner.mid,
+    .spinner.bottom
+    {
+     margin-top: 3px;
+    }
+     #cartbtn{
+      color: #d14026;
+      height: 20px;
+      cursor: pointer;
+ }
+ 
+    
+    }
